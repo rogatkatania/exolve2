@@ -2,6 +2,8 @@
 
 # @mts-exolve/web-voice-sdk
 
+[NPM package page](https://www.npmjs.com/package/@mts-exolve/web-voice-sdk)
+
 Library description
 
 ## Installation
