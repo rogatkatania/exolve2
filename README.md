@@ -1,10 +1,6 @@
-@mts-exolve/web-voice-sdk / [Exports](modules.md)
-
 # @mts-exolve/web-voice-sdk
 
-[NPM package page](https://www.npmjs.com/package/@mts-exolve/web-voice-sdk)
-
-Library description
+Library description [todo]
 
 ## Installation
 
@@ -14,4 +10,4 @@ $ npm install @mts-exolve/web-voice-sdk
 
 ## Demo
 
-See demo app here [todo]
+See demo app [here](https://mtsexolve.github.io/web-voice-sdk/)
