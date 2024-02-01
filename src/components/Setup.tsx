@@ -78,6 +78,7 @@ export function Setup() {
 				<FormControl css={{ mt: 20 }}>
 					<Input
 						size="md"
+						type="password"
 						invalid={isInvalid()("sipPassword")}
 						onInput={handleInputPassword}
 						placeholder="Введите SIP пароль"

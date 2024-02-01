@@ -48,7 +48,7 @@ onMount($sdk, () => {
 	const settings = $settings.get();
 
 	const instance = createSipInstance({
-		debug: true,
+		ssl: true,
 		sipLogin: settings.sipUserName,
 		sipPassword: settings.sipPassword,
 	});

@@ -21,6 +21,7 @@ export const $settings = deepMap<Settings>(getPersistentSettings());
 
 export const setupSettings = action($settings, "setupActions", async (store, settings: Settings) => {
 	const instance = createSipInstance({
+		ssl: true,
 		sipLogin: settings.sipUserName,
 		sipPassword: settings.sipPassword,
 	});
