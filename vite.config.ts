@@ -8,6 +8,6 @@ export default defineConfig({
 		target: "esnext",
 	},
   server: {
-    port: 8080
+    port: 443
   }
 });
