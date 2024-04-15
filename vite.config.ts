@@ -8,9 +8,11 @@ export default defineConfig({
 		target: "esnext",
 	},
   server: {
-    port: 5173
+    host: "0.0.0.0",
+    port: 80
   },
   preview: {
-    port: 8080,
+    host: "172.17.3.131",
+    port: 5173
   },
 });
