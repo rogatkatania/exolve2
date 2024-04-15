@@ -8,7 +8,7 @@ export default defineConfig({
 		target: "esnext",
 	},
   server: {
-  host: 'exolve1.railway.internal',
+  host: '127.0.0.1',
   port: 443
 }
 });
