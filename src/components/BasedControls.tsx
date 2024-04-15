@@ -20,7 +20,11 @@ export function BasedControls() {
 		const session = sdk().instance?.call($target.get());
 		session && $sessionMutations.setSession({ from: settings().sipUserName, to: $target.get() }, session);
 	};
-
+// Получение номера телефона из параметра phone в URL query
+const phoneFromQuery = new URLSearchParams(location.search).get("phone") || "";
+if (phoneFromQuery) {
+$target.set(phoneFromQuery);
+}
 	return (
 		<Box>
 			<Box css={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
