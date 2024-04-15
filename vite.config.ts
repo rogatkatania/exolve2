@@ -8,6 +8,17 @@ export default defineConfig({
 		target: "esnext",
 	},
   server: {
-    port: 443
-  }
+    proxy: {
+      '/foo': 'http://localhost:5173',
+      '/': {
+        target: 'https://exolve1-production-fb81.up.railway.app/',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/, ''),
+      },
+    host: true,  
+    port: 5173
+  },
+  preview: {
+    port: 8080,
+  },
 });
